@@ -6,11 +6,12 @@
     
     <script>
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", "https://moro92.github.io/endpoint_tcp.json", false ); // false for synchronous request
+        XMLHttpRequest.setRequestHeader('X-AIO-Key', 'aio_TLBY82X23iopmueZe4DyOMUCdbjI')
+        xmlHttp.open( "GET", "'https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data/last", false ); // false for synchronous request
         xmlHttp.send( null );
         //alert( xmlHttp.responseText);
         var obj = JSON.parse(xmlHttp.responseText);
-        window.location.href=obj.hostname;
+        window.location.href=obj.value;
         
     </script>
     <p>
