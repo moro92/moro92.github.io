@@ -10,7 +10,7 @@
         xmlHttp.send( null );
         //alert( xmlHttp.responseText);
         var obj = JSON.parse(xmlHttp.responseText);
-        location.href = obj.hostname;
+        window.location.replace(obj.hostname);
         
     </script>
     <p>
