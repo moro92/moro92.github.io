@@ -1,1 +1,4 @@
-http://0c7b3b4b.ap.ngrok.io/
+{
+    'hostname':'tcp.ngrok.quellochetepare',
+    'port':61000
+}
