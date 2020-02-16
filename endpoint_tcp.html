@@ -3,6 +3,13 @@
     <title>Endpoint TCP</title>
   </head>
   <body>
+    
+    <script>
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", "https://moro92.github.io/endpoint_tcp.json", false ); // false for synchronous request
+        xmlHttp.send( null );
+        alert( xmlHttp.responseText);
+    </script>
     <p>
     <br>
     HOSTNAME:"tcp.ngrok.quellochetepare"<br>
