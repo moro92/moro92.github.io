@@ -6,18 +6,21 @@
     
     <script>
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.setRequestHeader('X-AIO-Key', 'aio_TLBY82X23iopmueZe4DyOMUCdbjI')
-        xmlHttp.open( "GET", "'https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data/last", false ); // false for synchronous request
+        //Versione autenticata
+        //xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data/last", false ); // false for synchronous request
+        //xmlHttp.setRequestHeader("X-AIO-Key", "aio_Wpuc96xSoKrPJgQbBfyW3hkJuahO")
+        //Versione non autenticata(Il feed deve essere pubblico)
+        xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data", false ); // false for synchronous request
         xmlHttp.send( null );
-        //alert( xmlHttp.responseText);
         var obj = JSON.parse(xmlHttp.responseText);
-        window.location.href=obj.value;
-        
+        //alert( xmlHttp.responseText );
+        //alert( obj[0].value);
+        window.location.href=obj[0].value;
     </script>
-    <p>
-    <br>
+    //<p>
+    //<br>
     //HOSTNAME:"tcp.ngrok.quellochetepare"<br>
     //PORT:"61000"<br>
-    </p>
+    //</p>
   </body>
 </html>
