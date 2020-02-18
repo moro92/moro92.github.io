@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Pagina di Redirect</title>
+    <meta http-equiv="refresh" content="0;URL=http://jonny059-32220.portmap.host:32220/">
+  </head>
+  <body>
+    <p>
+    Tra 5 secondi avverrà un redirect automatico alla nuova pagina.<br>
+    Se non vuoi aspettare <a href="http://jonny059-32220.portmap.host:32220/">clicca qui</a>.
+    </p>
+  </body>
+</html>
