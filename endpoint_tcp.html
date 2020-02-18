@@ -6,9 +6,6 @@
     
     <script>
         var xmlHttp = new XMLHttpRequest();
-        //Versione autenticata
-        //xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data/last", false ); // false for synchronous request
-        //xmlHttp.setRequestHeader("X-AIO-Key", "aio_kwvj26tlXTacSF56FdbvC7jkhXq8")
         //Versione non autenticata(Il feed deve essere pubblico)
         xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data", false ); // false for synchronous request
         xmlHttp.send( null );
@@ -19,8 +16,6 @@
     </script>
     //<p>
     //<br>
-    //HOSTNAME:"tcp.ngrok.quellochetepare"<br>
-    //PORT:"61000"<br>
     //</p>
   </body>
 </html>
