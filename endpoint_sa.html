@@ -1,13 +1,13 @@
 <html>
   <head>
-    <title>Endpoint ap</title>
+    <title>Endpoint sa</title>
   </head>
   <body>
     
     <script>
         var xmlHttp = new XMLHttpRequest();
         //Versione non autenticata(Il feed deve essere pubblico)
-        xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data", false ); // false for synchronous request
+        xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointsa/data", false ); // false for synchronous request
         xmlHttp.send( null );
         var obj = JSON.parse(xmlHttp.responseText);
         window.location.href=obj[0].value;
