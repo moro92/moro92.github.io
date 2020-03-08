@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Endpoint TCP</title>
+  </head>
+  <body>
+    
+    <script>
+        var xmlHttp = new XMLHttpRequest();
+        //Versione non autenticata(Il feed deve essere pubblico)
+        xmlHttp.open( "GET", "https://io.adafruit.com/api/v2/moro92/feeds/endpointap/data", false ); // false for synchronous request
+        xmlHttp.send( null );
+        var obj = JSON.parse(xmlHttp.responseText);
+        //alert( xmlHttp.responseText );
+        //alert( obj[0].value);
+        window.location.href=obj[0].value;
+    </script>
+    //<p>
+    //<br>
+    //</p>
+  </body>
+</html>
